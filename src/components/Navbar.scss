@@ -1,17 +1,20 @@
 .navbar{
     height:100px;
     .wrapper{
-        max-width: 1366px;
+        // max-width: 1200px;
         margin: auto;
+        padding-left: 8%;
+        padding-right: 8%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 100px;
+        height: 100%;
+        span{
+            font-weight: bold;
+        }
     }
 
-    span{
-        font-weight: bold;
-    }
+    
 
     .social{
         display: flex;
@@ -21,5 +24,38 @@
             width: 18px;
             height: 18px;
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .wrapper {
+        padding-left: 20%;
+        padding-right: 5%;
+    }
+
+    .navbar .social {
+        gap: 10px;
+    }
+} 
+
+@media screen and (max-width: 1024px) {
+    .navbar .wrapper {
+        padding-left: 15%;
+        padding-right: 5%;
+    }
+
+    .navbar .social {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .navbar .wrapper {
+        padding-left: 23%;
+        padding-right: 5%;
+    }
+
+    .navbar .social {
+        gap: 10px;
     }
 }
